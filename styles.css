@@ -1,0 +1,60 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    color: #201c1d;
+  }
+
+  h1 {
+    line-height: 0px;
+  }
+
+  h1 small {
+    color: #676767;
+  }
+
+  section#card {
+    width: 500px;
+    margin: 15% auto;
+    padding: 20px;
+  }
+
+  div#card-content {
+    width: 330px;
+    padding-left: 20px;
+    display: inline-block;
+    position: absolute;
+  }
+
+  img#portrait {
+    border-radius: 50%;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  a,
+  /*#card-links a:hover,*/
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #676767;
+  }
+
+  a:hover {
+    color: #201c1d;
+    text-decoration: underline;
+  }
+
+  br.clear {
+    clear: both;
+  }
+
+  ul#card-links {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  ul#card-links li {
+    float: left;
+    padding: 0 5px 0 5px;
+  }

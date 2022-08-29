@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Max Weigand github page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-    </head>
-    <body>
-    
-    </body>
+  <head>
+    <title>Maximilian Weigand</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section id="card">
+      <div id="card-content">
+        <h1>Maximilian Weigand</h1>
+        <br />
+
+        <p class="pull-left">
+          Passionate full stack developer, based in Solingen, GER.
+        </p>
+        <ul id="card-links">
+          <li>
+            <i class="fa fa-github"></i> /
+            <a target="_blank" href="https://github.com/maxweigand"
+              >maxweigand</a
+            >
+          </li>
+          <li>
+            <i class="fa fa-envelope-o"></i> &nbsp;
+            <a id="m" target="_blank" href="mailto:...">...</a>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        id="portrait"
+        class="pull-left"
+        src="https://github.com/maxweigand.png?size=150"
+        alt="Portrait Max Weigand"
+        title="Max Weigand"
+      />
+      <br class="clear" />
+    </section>
+
+    <script>
+      function decode() {
+        var x = ["max", "weig", "and@", "gmx.", "de"];
+        var m = document.getElementById("m");
+        m.textContent = x.join("");
+        m.href = ["mailto", m.textContent].join(":");
+      }
+      decode();
+    </script>
+  </body>
 </html>
