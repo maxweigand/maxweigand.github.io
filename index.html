@@ -26,6 +26,12 @@
     />
     <meta name="twitter:card" content="summary" />
 
+    <!-- The portrait is the LCP element and lives on a third origin: warm up
+         DNS + TLS before the preload scanner gets to the <img>. No crossorigin
+         attribute — plain <img> requests are not CORS requests, and a
+         mismatched preconnect opens a connection the image can't reuse. -->
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+
     <link
       rel="preload"
       href="fonts/oxygen-300-latin.woff2"
@@ -51,6 +57,8 @@
         height="150"
         alt="Portrait Max Weigand"
         title="Max Weigand"
+        fetchpriority="high"
+        decoding="async"
       />
 
       <div id="card-content">
